@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <script src="https://unpkg.com/vue@3"></script>
+    </head>
+    <body>
+        <h1>Hello vue</h1>
+
+        <div id="app">
+            <div v-if="showbooks">
+                <ul>
+                    <li v-for="book in books">
+                    <img :src="book.img" :alt="book.title">    
+                        <h3>{{ book.title }}  </h3>
+                       <p>{{ book.author }}</p>
+                    </li>
+                </ul>
+        </div>
+    
+    <button @click="togglebutton">
+        <span v-if="showbooks">Hide books</span>
+        <span v-else>Show books</span>
+    </button>
+
+ 
+   
+   
+    
+   
+    </div>
+    <script src='ap.js'></script>
+    </body>
+</html>
